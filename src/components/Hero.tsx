@@ -10,12 +10,20 @@ const Hero = () => {
     }
   };
 
+  const openResume = () => {
+    window.open('/lovable-uploads/4ace34cd-e5a0-4c1c-abae-04b519530f95.png', '_blank');
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-4">
       <div className="container mx-auto text-center">
         <div className="mb-8">
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-6xl font-bold shadow-2xl animate-fade-in">
-            BA
+          <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl animate-fade-in">
+            <img 
+              src="/lovable-uploads/dcc661c5-b3aa-4f45-8aa8-6001ea59b5f6.png" 
+              alt="Basani Ananth" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
         
@@ -43,6 +51,12 @@ const Hero = () => {
             className="border-2 border-coral-500 text-coral-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-coral-500 hover:text-white transform hover:scale-105 transition-all duration-300"
           >
             Learn More
+          </button>
+          <button 
+            onClick={openResume}
+            className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300"
+          >
+            Resume
           </button>
         </div>
         

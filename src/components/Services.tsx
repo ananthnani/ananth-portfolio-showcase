@@ -16,24 +16,13 @@ const Services = () => {
     },
     {
       title: "Web Application Development",
-      description: "Creating modern, responsive web applications with focus on user experience and performance optimization.",
+      description: "Creating modern, responsive web applications with focus on user experience and performance optimization using latest technologies.",
       features: [
         "Frontend Development",
         "Backend Integration",
         "Mobile-First Design",
         "Cross-Browser Compatibility",
         "SEO Optimization"
-      ]
-    },
-    {
-      title: "Database Solutions",
-      description: "Designing and implementing efficient database solutions for web applications with proper data modeling and optimization.",
-      features: [
-        "Database Design",
-        "Query Optimization",
-        "Data Migration",
-        "Performance Tuning",
-        "Backup & Recovery"
       ]
     }
   ];
@@ -48,7 +37,7 @@ const Services = () => {
           <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {services.map((service, index) => (
             <div 
               key={index}

@@ -9,6 +9,8 @@ const Skills = () => {
     { name: 'SQL', level: 80 },
     { name: 'HTML', level: 95 },
     { name: 'CSS', level: 90 },
+    { name: 'JavaScript', level: 85 },
+    { name: 'Python', level: 80 },
   ];
 
   const softSkills = [
@@ -16,8 +18,16 @@ const Skills = () => {
     'Communication',
     'Quick Learner',
     'Team Collaboration',
-    'Project Management',
-    'Documentation',
+    'Leadership',
+    'Teamwork',
+  ];
+
+  const certifications = [
+    'Java (Basic) – Hacker Rank',
+    'Certificate in SQL – 360DigiTMG',
+    'Learn Java – CodeCademy',
+    'Learn SQL – CodeCademy',
+    'Python for Data Science – NPTEL',
   ];
 
   return (
@@ -30,7 +40,7 @@ const Skills = () => {
           <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-3 gap-8">
           {/* Technical Skills */}
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">
@@ -61,13 +71,31 @@ const Skills = () => {
               Soft Skills
             </h3>
             
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               {softSkills.map((skill, index) => (
                 <div 
                   key={index}
                   className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-xl text-center hover:from-blue-100 hover:to-blue-200 transition-all duration-300 transform hover:scale-105"
                 >
                   <span className="text-gray-700 font-medium">{skill}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Certifications */}
+          <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">
+              Certifications
+            </h3>
+            
+            <div className="space-y-4">
+              {certifications.map((cert, index) => (
+                <div 
+                  key={index}
+                  className="bg-gradient-to-br from-coral-50 to-coral-100 p-4 rounded-xl hover:from-coral-100 hover:to-coral-200 transition-all duration-300"
+                >
+                  <span className="text-gray-700 font-medium text-sm">{cert}</span>
                 </div>
               ))}
             </div>
