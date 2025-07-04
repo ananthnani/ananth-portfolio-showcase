@@ -47,7 +47,7 @@ const About = () => {
                 <div className="w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
                 <div>
                   <h4 className="font-semibold text-gray-800">B.Tech - Electronics and Communication Engineering</h4>
-                  <p className="text-gray-600">SR University (2024)</p>
+                  <p className="text-gray-600">SR University (2020 - 2024)</p>
                   <p className="text-blue-600 font-medium">CGPA: 7.2</p>
                 </div>
               </div>
@@ -55,8 +55,9 @@ const About = () => {
               <div className="flex items-start space-x-4">
                 <div className="w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Intermediate</h4>
-                  <p className="text-gray-600">2020</p>
+                  <h4 className="font-semibold text-gray-800">Intermediate - PCM</h4>
+                  <p className="text-gray-600">Narayana Junior College (2018 - 2020)</p>
+                  <p className="text-blue-600 font-medium">Percentage: 90%</p>
                 </div>
               </div>
               
@@ -64,7 +65,8 @@ const About = () => {
                 <div className="w-3 h-3 bg-blue-600 rounded-full mt-2"></div>
                 <div>
                   <h4 className="font-semibold text-gray-800">SSC</h4>
-                  <p className="text-gray-600">2018</p>
+                  <p className="text-gray-600">Spectra Global School (2017 - 2018)</p>
+                  <p className="text-blue-600 font-medium">Percentage: 90%</p>
                 </div>
               </div>
             </div>
